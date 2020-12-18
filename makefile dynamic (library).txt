@@ -1,0 +1,13 @@
+TARGET  = libfunctions.so
+
+output: $(TARGET)
+
+
+$(TARGET) : functions.o
+	g++ functions.o -shared -std=c++17 -fPIC -pedantic -Wall -Wextra -o $(TARGET)
+ 
+
+functions.o: functions.cpp
+	g++ -c functions.cpp -fPIC	
+clean: 
+	-rm -f $(TARGET) functions.o

@@ -1,0 +1,21 @@
+#pragma once
+void mutableToUpper(char* text);
+void immutableToUpper(char* text, char* buf);
+void mutableToLower(char* text);
+void immutableToLower(char* text, char* buf);
+void mutableFilter(char* text);
+void immutableFilter(char* text, char* buf);
+void mutableDeleteSpace(char* text);
+void immutableDeleteSpace(char* text, char* buf);
+bool isNumber(char* text);
+bool isLetter(char* text);
+void mutableTrim(char* text);
+void immutableTrim(char* text, char* buf);
+void mutableEncoderCesar(char* text, int step);
+void mutableDecoderCesar(char* text, int step);
+void immutableEncoderCesar(char* text, int step, char* buf);
+void immutableDecoderCesar(char* text, int step, char* buf);
+void mutableEncoderXor(char* text, char* key);
+void mutableDecoderXor(char* text, char* key);
+void immutableEncoderXor(char* text, char* key, char* buf);
+void immutableDecoderXor(char* text, char* key, char* buf);
